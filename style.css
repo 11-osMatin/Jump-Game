@@ -1,0 +1,80 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg');
+}
+
+* {
+    padding: 0;
+    margin: 900;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(100, 100, 100);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.game {
+    width: 600px;
+    height: 250px;
+    border: 4px solid black;
+    margin: auto;
+}
+
+#character {
+    width: 28px;
+    height: 60px;
+    background-color: red;
+    position: relative;
+    top: 190px;
+}
+
+.animate {
+    animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    70% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+#block {
+    background-color: blue;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 165px;
+    left: 690px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 690px
+    }
+    100% {
+        left: -20px
+    }
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
